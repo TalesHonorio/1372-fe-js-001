@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="POST">
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+        <div>
+          <label for="name">Nome</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            pattern="\w+\s+\w+"
+            title="Digite seu nome completo"
+            placeholder="Digite o seu nome"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite o seu email"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="password">Senha</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Digite a sua senha"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="birthdate">Data de Nasc.</label>
+          <input
+            type="date"
+            id="birthdate"
+            name="birthdate"
+            min="2025-01-01"
+            max="2025-08-15"
+            placeholder="Digite a sua data de nascimento"
+          />
+        </div>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Endereço</legend>
+        <div>
+          <label for="street">Rua</label>
+          <input
+            type="text"
+            id="street"
+            name="street"
+            placeholder="Digite a sua rua"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="number">Número</label>
+          <input
+            type="number"
+            step="0.5"
+            min="0"
+            max="1000"
+            id="number"
+            name="number"
+            placeholder="Digite o número"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="city">Cidade</label>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            minlength="2"
+            maxlength="5"
+            placeholder="Digite a sua cidade"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="state">Estado</label>
+          <input
+            type="text"
+            id="state"
+            name="state"
+            placeholder="Digite o seu estado"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="houseColor">Cor da casa</label>
+          <input
+            type="color"
+            id="houseColor"
+            name="houseColor"
+            placeholder="Digite a cor da sua casa"
+          />
+        </div>
+      </fieldset>
+
+      <button type="submit">Enviar dados</button>
+    </form>
+  </body>
+</html>
