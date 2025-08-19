@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="#" method="POST">
+    <form action="#" method="GET">
       <fieldset>
         <legend>Informações Pessoais</legend>
         <div>
@@ -18,6 +18,7 @@
             pattern="\w+\s+\w+"
             title="Digite seu nome completo"
             placeholder="Digite o seu nome"
+            value="Ivirson Daltro"
             required
           />
         </div>
@@ -53,10 +54,41 @@
             placeholder="Digite a sua data de nascimento"
           />
         </div>
+        <br />
+        <div>
+          <label for="graduation">Graduação</label>
+          <select name="graduation" id="graduation">
+            <option value="">-- Selecione</option>
+            <optgroup label="Básica">
+              <option value="ensino-fundamental">Ensino Fundamental</option>
+              <option value="ensino-medio" selected>Ensino Médio</option>
+            </optgroup>
+            <optgroup label="Superior">
+              <option value="superior">Superior</option>
+              <option value="pos-graduacao">Pós-Graduação</option>
+            </optgroup>
+          </select>
+        </div>
       </fieldset>
       <br />
       <fieldset>
         <legend>Endereço</legend>
+        <div>
+          <span>Endereço comercial?</span>
+          <label for="addressTypeS">Sim</label>
+          <input type="radio" id="addressTypeS" name="addressType" value="S" />
+          <label for="addressTypeN">Não</label>
+          <input type="radio" id="addressTypeN" name="addressType" value="N" />
+        </div>
+        <br />
+        <div>
+          <p>Tipo de Endereço</p>
+          <label for="addressTypeR">Residencial</label>
+          <input type="checkbox" id="addressTypeR" />
+          <label for="addressTypeC">Comercial</label>
+          <input type="checkbox" id="addressTypeC" />
+        </div>
+        <br />
         <div>
           <label for="street">Rua</label>
           <input
@@ -112,6 +144,21 @@
           />
         </div>
       </fieldset>
+
+      <br />
+
+      <textarea
+        name="observations"
+        id="observations"
+        rows="5"
+        cols="40"
+        placeholder="Digite suas observações aqui..."
+      >
+Alguma coisa
+    </textarea
+      >
+
+      <br />
 
       <button type="submit">Enviar dados</button>
     </form>
